@@ -18,7 +18,6 @@ interface Props {
 
 export default function TableRow({
   items,
-  tableData,
   setTableData,
   index,
 }: {

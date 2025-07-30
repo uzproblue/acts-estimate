@@ -12,8 +12,8 @@ export default function SelectCell({ value, setValue, options }: Iprops) {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       >
-        {options.map((item) => (
-          <option> {item} </option>
+        {options.map((item, index) => (
+          <option key={index}> {item} </option>
         ))}
       </select>
     </td>
