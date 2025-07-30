@@ -1,0 +1,5 @@
+import React from "react";
+
+export default function HeaderCell({ children }: { children: string }) {
+  return <th className="p-2 py-3 text-start w-fit">{children}</th>;
+}

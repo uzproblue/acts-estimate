@@ -1,0 +1,14 @@
+/* design tokens (light + dark) */
+:root {
+  --tw-bg-neutral: #f9fafb;
+  --tw-text-default: #1f2937;
+  --tw-border-highlight: #4078f2;
+  --tw-bg-muted: #e5e7eb;
+}
+
+[data-theme="dark"] {
+  --tw-bg-neutral: #080c14; /* dark background */
+  --tw-text-default: #f8fafc; /* dark text */
+  --tw-border-highlight: #4078f2;
+  --tw-bg-muted: #1f2937;
+}
