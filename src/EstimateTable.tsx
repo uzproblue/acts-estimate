@@ -1,6 +1,7 @@
 import HeaderCell from "./components/HeaderCell";
 import TableRow from "./components/TableRow";
 import type { TableDataType } from "./Types";
+import { Icon } from "@iconify/react";
 
 export default function EstimateTable({
   tableData,
@@ -12,8 +13,8 @@ export default function EstimateTable({
   return (
     <>
       <div className="overflow-auto max-h-screen">
-        <table className="min-w-full rounded-t-[20px]  text-sm text-start mt-4">
-          <thead className="sticky top-4 bg-[var(--tw-bg-muted)] z-10 border border-[var(--tw-bg-muted)]">
+        <table className="min-w-full rounded-t-[20px] text-sm text-start mt-4">
+          <thead className="sticky top-0 bg-[var(--tw-bg-muted)] z-10 border border-[var(--tw-bg-muted)]">
             <tr>
               <HeaderCell>Description</HeaderCell>
               <HeaderCell>Qty</HeaderCell>
@@ -44,13 +45,13 @@ export default function EstimateTable({
         </table>
       </div>
       <button
-        className=" cursor-pointer"
+        className=" cursor-pointer bg-[var(--tw-bg-muted)] py-2 mt-2 px-4 hover:opacity-70"
         onClick={() => {
           const newData = tableData.concat({} as TableDataType);
           setTableData(newData);
         }}
       >
-        + Add a row
+        <Icon icon="material-symbols:add-rounded" />
       </button>
     </>
   );

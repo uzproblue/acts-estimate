@@ -50,7 +50,6 @@ export default function TableRow({
       return newData;
     });
   }, [matUnit, labUnit, equipUnit, subUnit]);
-  console.log(tableData);
 
   return (
     <tr className=" border-[var(--tw-bg-muted)] border hover:bg-[var(--tw-bg-muted)] cursor-pointer transition ">

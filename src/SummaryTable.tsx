@@ -11,7 +11,6 @@ export default function SummaryTable({ data }: { data: TableDataType[] }) {
     0
   );
   const total = data.reduce((total, row) => total + (row.total ?? 0), 0);
-  console.log(totalMaterial);
   return (
     <div className="max-w-[500px]">
       <table className="min-w-full rounded-t-[20px]  text-base text-start mt-4">
